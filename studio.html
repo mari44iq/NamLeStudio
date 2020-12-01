@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nam Le studio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> Nam Le Studio</a>
+            <a href="store.html"> Store</a>
+            <a href="studio.html"> Studio</a>
+            <a href="story.html">Story</a>
+        </nav>
+    </header>
+
+    <h1 id="sidetitel"></h1>
+    <main id="indhold"></main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        const url = "http://mariajorgensen.com/2_semester/eksamen_namle/wordpress/wp-json/wp/v2/pages/11";
+
+        async function start() {
+            const resspons = await fetch(url);
+            const json = await resspons.json();
+            vis(json);
+        }
+
+        function vis(data) {
+            console.log(data)
+            document.querySelector("#sidetitel").textContent = data.title.rendered;
+            document.querySelector("#indhold").innerHTML = data.content.rendered;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
