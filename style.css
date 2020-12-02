@@ -107,6 +107,26 @@ header nav a {
 }
 
 /*******************STORE slut****************/
+/*******************story ****************/
+
+
+
+.textstory {}
+
+.imgstory img {}
+
+@media (min-width:950px) {
+    #story {
+        display: flex;
+    }
+
+
+}
+
+
+
+/*******************story slut****************/
+
 
 
 

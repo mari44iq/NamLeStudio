@@ -20,8 +20,11 @@
     </header>
 
     <h1 id="sidetitel"></h1>
-    <main id="indhold"></main>
 
+    <main id="indhold"></main>
+    <section id="story">
+
+    </section>
 
 
     <footer>
@@ -49,7 +52,7 @@
         function vis(data) {
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
-            document.querySelector("#indhold").innerHTML = data.content.rendered;
+            document.querySelector("#story").innerHTML = data.content.rendered;
         }
 
     </script>
