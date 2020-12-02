@@ -7,19 +7,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    /* change to red on mouseover */
+header a:hover {
+    /* change to color on mouseover */
     color: #428C77;
 }
 
 
 header {
-    /*background: rgb(68, 68, 68);
-    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(215, 215, 215, 0) 60%, rgba(250, 250, 250, 0) 100%);*/
     position: fixed;
     width: 100%;
-
-
 }
 
 
@@ -28,9 +24,7 @@ header nav {
     text-align: right;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
-
 
 
 header nav a {
@@ -41,17 +35,12 @@ header nav a {
 @media (min-width:950px) {
     header nav {
         flex-direction: row;
-        top: 20px;
         position: relative;
         text-align: right;
         float: right;
-
-
-
     }
 
     header nav a {
-        /*border-right: 0.1rem solid #000000;*/
         padding: 0 1rem;
     }
 
@@ -61,6 +50,54 @@ header nav a {
 
 }
 
-
-
 /*********** menu slut *********/
+
+/*_________________________Footer_________________________*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #3b4141;
+    margin-top: 20px;
+    border-top: 0.5px solid #e2e2e2;
+    font-family: proxima-nova, sans-serif;
+
+}
+
+footer a {
+    padding: 5px;
+    font-size: 13px;
+}
+
+.footerv {
+    text-align: center;
+    flex-grow: 2;
+    flex-basis: 400px;
+    margin: 20px;
+    border-radius: 15px 15px 15px 15px;
+
+
+
+}
+
+
+.footerh {
+    text-align: center;
+    flex-grow: 2;
+    flex-basis: 400px;
+    margin: 20px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 13px;
+
+}
+
+@media (min-width:950px) {
+    .footerv {
+        text-align: left;
+    }
+
+    .footerh {
+        text-align: end;
+    }
+
+
+    /*---------------------------footer slutter---------------------------*/
