@@ -1,3 +1,8 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
 /*********** menu *********/
 
 a {
@@ -51,6 +56,47 @@ header nav a {
 }
 
 /*********** menu slut *********/
+
+
+/*******************STORE****************/
+.overskriftstore {
+    text-align: center;
+}
+
+.textstore {
+    text-align: center;
+}
+
+.imgstore img {
+    width: 300px;
+    height: 500px;
+
+
+
+}
+
+.column1 {}
+
+.column2 {}
+
+@media (min-width:950px) {
+    .column1 {
+        column-count: 2;
+
+    }
+
+    .column2 {
+        column-count: 2;
+
+    }
+
+    .imgstore img {}
+
+}
+
+/*******************STORE slut****************/
+
+
 
 /*_________________________Footer_________________________*/
 footer {
