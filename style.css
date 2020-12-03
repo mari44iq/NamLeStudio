@@ -2,9 +2,32 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+
 }
 
+
+
 /*********** menu *********/
+
+
+.logo {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: normal;
+    font-weight: 400;
+    float: left;
+    display: block;
+    width: 300px;
+    position: absolute;
+    left: 4px;
+    right: 0;
+    margin: 0px auto;
+    line-height: 50px;
+
+
+
+}
 
 a {
     /* default link color */
@@ -30,6 +53,7 @@ header nav {
     text-align: right;
     flex-wrap: wrap;
     flex-direction: column;
+
 }
 
 
@@ -44,6 +68,8 @@ header nav a {
         position: relative;
         text-align: right;
         float: right;
+        line-height: 50px;
+
     }
 
     header nav a {
@@ -67,27 +93,40 @@ header nav a {
 }
 
 
+
 /*****************forside slut*************/
 
 
-/*******************STORE****************/
-.overskriftstore {
+/*******************STORE ****************/
+.underoverskriftstore {
     text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    padding-top: 30px;
 }
 
 .textstore {
     text-align: center;
+    padding-bottom: 50px;
+    line-height: 24px;
 }
 
 .imgstore img {
     width: 300px;
-    height: 500px;
-
-
+    height: 400px;
 
 }
 
-.column1 {}
+#indholdstore {
+    text-align: center;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.column1 {
+    padding-bottom: 20px;
+}
 
 .column2 {}
 
@@ -100,6 +139,8 @@ header nav a {
     .column2 {
         column-count: 2;
 
+
+
     }
 
     .imgstore img {}
@@ -109,15 +150,38 @@ header nav a {
 /*******************STORE slut****************/
 /*******************story ****************/
 
+#story {
+    padding-top: 50px;
+}
+
+.wp-block-group__inner-container {
+    padding-bottom: 20px;
+    line-height: 24px;
+    padding: 25px 50px 75px;
 
 
-.textstory {}
+}
 
-.imgstory img {}
+.underoverskriftstory {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+
+
+}
+
+.imgstory img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 @media (min-width:950px) {
     #story {
         display: flex;
+        padding: 50px 90px 75px;
+
+
     }
 
 
@@ -126,6 +190,49 @@ header nav a {
 
 
 /*******************story slut****************/
+/*******************Studio****************/
+
+
+#indholdstudio {
+    padding-top: 50px;
+}
+
+.wp-block-group__inner-container {
+    padding-bottom: 20px;
+    line-height: 24px;
+    padding: 25px 50px 75px;
+
+}
+
+.underoverskriftstudio {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+
+}
+
+.videostudio video {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:950px) {
+    #indholdstudio {
+        display: flex;
+        padding: 50px 90px 75px;
+
+    }
+
+    .videostudio video {
+        width: 600px;
+    }
+
+
+}
+
+
+/*******************Studio slut****************/
 
 
 

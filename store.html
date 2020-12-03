@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nam Le studio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="3232.png">
 
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <div class="logo"> NAM LE </div>
+        </a>
         <nav>
             <a href="index.html"> Nam Le Studio</a>
             <a href="store.html"> Store</a>
@@ -21,7 +25,7 @@
 
 
     <h1 id="sidetitel"></h1>
-    <main id="indhold"></main>
+    <main id="indholdstore"></main>
 
 
     <footer>
@@ -30,6 +34,7 @@
             <a href="index.html">Privacy Policy</a>
             <a href="index.html">Terms & Conditions</a>
             <a href="https://www.instagram.com/namlestudio/">Instagram</a>
+
         </div>
 
         <div class="footerh">
@@ -50,7 +55,7 @@
         function vis(data) {
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
-            document.querySelector("#indhold").innerHTML = data.content.rendered;
+            document.querySelector("#indholdstore").innerHTML = data.content.rendered;
         }
 
     </script>
