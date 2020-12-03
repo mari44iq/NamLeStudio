@@ -34,6 +34,7 @@ body {
 
 
 
+
 }
 
 a {
@@ -61,6 +62,7 @@ header nav {
     text-align: right;
     flex-wrap: wrap;
     flex-direction: column;
+
 
 }
 
@@ -128,6 +130,14 @@ header nav a {
     width: 300px;
     height: 400px;
 
+}
+
+.imgstore img:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    width: 350px;
+    height: 450px;
 }
 
 #indholdstore {
@@ -452,6 +462,9 @@ footer a {
     }
 
 }
+
+
+
 
 /*---------------------------footer slutter---------------------------*/
 .bubble1 {
