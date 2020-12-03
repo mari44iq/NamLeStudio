@@ -7,31 +7,26 @@
     <title>Nam Le studio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="3232.png">
-
-
-
 </head>
 
 <body>
     <header>
+
         <a href="index.html">
             <div class="logo"> NAM LE </div>
         </a>
+
         <nav>
             <a href="index.html"> Nam Le</a>
             <a href="store.html"> Store</a>
             <a href="studio.html"> Studio</a>
             <a href="story.html">Story</a>
+
         </nav>
     </header>
 
     <h1 id="sidetitel"></h1>
-
-    <main id="indhold"></main>
-    <section id="story">
-
-    </section>
-
+    <main id="indholdnaoma"></main>
 
     <footer>
         <div class="footerv">
@@ -45,9 +40,16 @@
             Nam Le 2020
         </div>
     </footer>
+
+
+
+
+
+
+
     <script>
         document.addEventListener("DOMContentLoaded", start);
-        const url = "http://mariajorgensen.com/2_semester/eksamen_namle/wordpress/wp-json/wp/v2/pages/13";
+        const url = "http://mariajorgensen.com/2_semester/eksamen_namle/wordpress/wp-json/wp/v2/pages/94";
 
         async function start() {
             const resspons = await fetch(url);
@@ -58,7 +60,7 @@
         function vis(data) {
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
-            document.querySelector("#story").innerHTML = data.content.rendered;
+            document.querySelector("#indholdnaoma").innerHTML = data.content.rendered;
         }
 
     </script>
