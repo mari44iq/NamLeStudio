@@ -90,6 +90,8 @@ header nav a {
 
 }
 
+
+
 /*********** menu slut *********/
 
 /*****************forside*************/
@@ -200,6 +202,7 @@ header nav a {
     #story {
         display: flex;
         padding: 50px 90px 75px;
+        padding-bottom: 180px;
 
 
     }
@@ -215,7 +218,6 @@ header nav a {
 
 #indholdstudio {
     padding-top: 50px;
-
 }
 
 .wp-block-group__inner-container {
@@ -242,6 +244,8 @@ header nav a {
     #indholdstudio {
         display: flex;
         padding: 50px 90px 75px;
+        padding-bottom: 180px;
+
 
     }
 
@@ -277,6 +281,7 @@ header nav a {
     #indholdmallory {
         display: flex;
         padding: 50px 350px 75px;
+
 
 
 
