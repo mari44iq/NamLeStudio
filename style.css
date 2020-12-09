@@ -18,7 +18,7 @@ body {
 
 .logo {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     letter-spacing: 4px;
     line-height: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@ body {
     right: 0;
     margin: 0px auto;
     line-height: 50px;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
 
 
 
@@ -40,13 +40,13 @@ body {
 a {
     /* default link color */
     color: #000000;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
     text-decoration: none;
 }
 
 header a:hover {
     /* change to color on mouseover */
-    color: #428C77;
+    color: #C7C1C2;
 
 }
 
@@ -122,7 +122,7 @@ header nav a {
     text-align: center;
     padding-bottom: 50px;
     line-height: 24px;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
     font-weight: 300;
 }
 
@@ -183,11 +183,10 @@ header nav a {
     padding-top: 50px;
 }
 
-.wp-block-group__inner-container {
+.textstory {
     padding-bottom: 20px;
     line-height: 24px;
-    padding: 25px 50px 75px;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
     font-weight: 300;
 
 
@@ -212,10 +211,13 @@ header nav a {
 @media (min-width:950px) {
     #story {
         display: flex;
-        padding: 50px 90px 75px;
+        padding: 70px 200px 75px;
         padding-bottom: 180px;
 
+    }
 
+    .textstory {
+        padding-right: 30%;
     }
 
 
@@ -231,16 +233,18 @@ header nav a {
     padding-top: 50px;
 }
 
-.wp-block-group__inner-container {
+.tekststudio {
     padding-bottom: 20px;
     line-height: 24px;
-    padding: 25px 50px 75px;
+
+    font-family: 'Sofia Pro Ultra Light';
 
 }
 
 .underoverskriftstudio {
     font-size: 1.2rem;
     padding-bottom: 10px;
+    font-family: 'mono45 headline';
 
 }
 
@@ -254,14 +258,19 @@ header nav a {
 @media (min-width:950px) {
     #indholdstudio {
         display: flex;
-        padding: 50px 90px 75px;
-        padding-bottom: 180px;
+        padding: 70px 130px 75px;
+        padding-bottom: 210px;
 
 
     }
 
     .videostudio video {
         width: 600px;
+
+    }
+
+    .tekststudio {
+        padding-right: 20%;
     }
 
 
@@ -277,8 +286,9 @@ header nav a {
 .tekstkjole1 {
     padding-bottom: 20px;
     line-height: 24px;
-}
+    padding: 25px 50px 75px;
 
+}
 
 
 .img1 img {
@@ -292,8 +302,6 @@ header nav a {
     #indholdmallory {
         display: flex;
         padding: 50px 350px 75px;
-
-
 
 
     }
