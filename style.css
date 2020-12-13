@@ -105,16 +105,43 @@ header nav a {
 }
 
 .imgforside img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+    width: 100%;
+
+}
+
+.imgforside2 img {
+    width: 100%;
+
+}
+
+.imgforside3 img {
+    width: 100%;
+
 }
 
 @media (min-width:950px) {
     .imgforside img {
-        width: 100vw;
-        height: 100vh;
+        padding-bottom: 5px;
+        width: 200vh;
+        height: 95vh;
+
     }
+
+    .imgforside2 img {
+        width: 100vh;
+    }
+
+    .imgforside3 img {
+        width: 100vh;
+    }
+
+    .forsidegruppe {
+        column-count: 2;
+
+    }
+
+
 
 }
 
