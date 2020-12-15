@@ -102,23 +102,30 @@ header nav a {
 
 #indhold {
     text-align: center;
+
 }
 
 .imgforside img {
 
     width: 100%;
 
+
 }
 
 .imgforside2 img {
     width: 100%;
+
 
 }
 
 .imgforside3 img {
     width: 100%;
 
+
 }
+
+
+
 
 @media (min-width:950px) {
     .imgforside img {
@@ -176,8 +183,8 @@ header nav a {
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
-    width: 305px;
-    height: 405px;
+    /*** width: 305px;
+    height: 405px;***/
 }
 
 #indholdstore {
@@ -189,7 +196,7 @@ header nav a {
 }
 
 .column1 {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-family: 'mono45 headline';
     font-weight: 300;
 
@@ -250,6 +257,8 @@ header nav a {
 
 
 
+
+
 @media (min-width:950px) {
     #story {
         display: flex;
@@ -267,6 +276,7 @@ header nav a {
         margin-left: auto;
         margin-right: auto;
     }
+
 
 
 }
@@ -357,6 +367,8 @@ header nav a {
 
 
 }
+
+
 
 @media (min-width:850px) {
     #indholdmallory {
@@ -491,6 +503,7 @@ header nav a {
 
 }
 
+
 .tekstkjole4 {
     line-height: 24px;
     font-family: 'Sofia Pro Ultra Light';
@@ -535,6 +548,128 @@ header nav a {
 }
 
 /*******************lynn slut****************/
+/*******************køb****************/
+#indholdbuy {
+    padding-top: 50px;
+
+}
+
+
+.imgbuy img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.row {
+    padding-right: 20px;
+}
+
+
+#mainbuy {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Sofia Pro Ultra Light';
+    padding-bottom: 130px;
+
+}
+
+
+
+h1 {
+    font-family: 'Sofia Pro Ultra Light';
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 2px;
+    resize: horizontal;
+}
+
+
+label {
+    padding: 8px 8px 8px 0;
+    display: inline-block;
+
+}
+
+
+input[type=send] {
+    background-color: black;
+    color: white;
+    padding: 12px 10px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=send]:hover {
+    background-color: #8C888C;
+    color: white;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Sofia Pro Ultra Light';
+
+}
+
+/**.inner_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}**/
+
+.col-25 {
+    float: left;
+    width: 75%;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+
+
+@media (min-width:850px) {
+    .row {
+        padding-right: 10px;
+    }
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+}
+
+/*******************køb slut****************/
 
 
 

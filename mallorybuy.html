@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nam Le studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="logoe-1.png">
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html">
+            <div class="logo"> NAM Lē </div>
+        </a>
+
+        <nav>
+
+            <a href="store.html"> Store</a>
+            <a href="studio.html"> Studio</a>
+            <a href="story.html">Story</a>
+
+        </nav>
+    </header>
+
+    <h1 id="sidetitel"></h1>
+    <main id="indholdbuy"></main>
+
+    <main id="mainbuy">
+
+
+        <div class="container">
+            <h1> ORDER FORM </h1>
+            <form action="/action_page.php">
+                <div class="inner_container">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Name*</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="fornavn" placeholder="...">
+                        </div>
+
+
+                        <div class="col-25">
+                            <label for="lname">Address*</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="email" placeholder="...">
+                        </div>
+
+
+                        <div class="col-25">
+                            <label for="lname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="emne" placeholder="...">
+                        </div>
+
+                        <div class="col-25">
+                            <label for="lname">Phone</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="emne" placeholder="...">
+                        </div>
+
+                        <div class="col-25">
+                            <label for="lname">Size</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="emne" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Comments or requests</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="besked" placeholder="Skriv din besked her.." style="height:170px"></textarea>
+                        </div>
+                        <input type="send" value="PRE-ORDER">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footerv">
+            <a href="index.html">Contact</a>
+            <a href="index.html">Privacy Policy</a>
+            <a href="index.html">Terms & Conditions</a>
+            <a href="https://www.instagram.com/namlestudio/">Instagram</a>
+        </div>
+
+        <div class="footerh">
+            Nam Le 2020
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        const url = "http://mariajorgensen.com/2_semester/eksamen_namle/wordpress/wp-json/wp/v2/pages/248";
+
+        async function start() {
+            const resspons = await fetch(url);
+            const json = await resspons.json();
+            vis(json);
+        }
+
+        function vis(data) {
+            console.log(data)
+            document.querySelector("#sidetitel").textContent = data.title.rendered;
+            document.querySelector("#indholdbuy").innerHTML = data.content.rendered;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
