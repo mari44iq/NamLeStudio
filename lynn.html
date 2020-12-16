@@ -12,6 +12,7 @@
 <body>
     <header>
 
+
         <a href="index.html">
             <div class="logo"> NAM Lē </div>
         </a>
@@ -24,9 +25,23 @@
 
         </nav>
     </header>
+    <ul class="breadcrumb">
+        <li><a href="index.html">NAM Lē</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li>LYNN JACKET</li>
+    </ul>
+
 
     <h1 id="sidetitel"></h1>
+
     <main id="indholdlynn"></main>
+
+    <div class="tilbageknapkjoler">
+        <button onclick="goBack()"> Go Back </button>
+    </div>
+
+
+
 
     <footer>
         <div class="footerv">
@@ -61,6 +76,10 @@
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
             document.querySelector("#indholdlynn").innerHTML = data.content.rendered;
+        }
+
+        function goBack() {
+            window.history.back();
         }
 
     </script>

@@ -25,9 +25,18 @@
         </nav>
     </header>
 
+
+    <ul class="breadcrumb">
+        <li><a href="index.html">NAM Lē</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li>AVA DRESS</li>
+    </ul>
+
     <h1 id="sidetitel"></h1>
     <main id="indholdava"></main>
-
+    <div class="tilbageknapkjoler">
+        <button onclick="goBack()"> Go Back </button>
+    </div>
     <footer>
         <div class="footerv">
             <a href="index.html">Contact</a>
@@ -61,6 +70,10 @@
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
             document.querySelector("#indholdava").innerHTML = data.content.rendered;
+        }
+
+        function goBack() {
+            window.history.back();
         }
 
     </script>

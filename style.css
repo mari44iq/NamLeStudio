@@ -98,7 +98,47 @@ header nav a {
 
 /*********** menu slut *********/
 
+/*********************brødkrummesti *************************/
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    padding-top: 65px;
+    font-family: 'Sofia Pro Ultra Light';
+
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #c7c1c2;
+    text-decoration: underline;
+}
+
+
+/*****************brødkrummesti slut *************/
+
+
 /*****************forside*************/
+
 
 #indhold {
     text-align: center;
@@ -106,7 +146,6 @@ header nav a {
 }
 
 .imgforside img {
-
     width: 100%;
 
 
@@ -124,27 +163,42 @@ header nav a {
 
 }
 
+.imgforside4 img {
+    width: 100%;
+}
+
 
 
 
 @media (min-width:950px) {
     .imgforside img {
         padding-bottom: 5px;
-        width: 200vh;
+        width: 75vh;
         height: 95vh;
+        padding-top: 30px;
 
     }
 
     .imgforside2 img {
-        width: 100vh;
+        width: 70vh;
+        height: 90vh;
+
     }
 
     .imgforside3 img {
-        width: 100vh;
+        width: 70vh;
+        height: 90vh;
+
+    }
+
+    .imgforside4 img {
+        width: 70vh;
+        height: 90vh;
+
     }
 
     .forsidegruppe {
-        column-count: 2;
+        column-count: 3;
 
     }
 
@@ -340,6 +394,22 @@ header nav a {
 
 
 /*******************Studio slut****************/
+
+
+/*******************tilbageknap kjoler ****************/
+.tilbageknapkjoler {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.tilbageknapkjoler :hover {
+    background-color: #8C888C;
+
+
+}
+
+/*******************tilbageknap kjoler slut****************/
+
 /*******************mallory****************/
 #indholdmallory {
     padding-top: 50px;
@@ -354,6 +424,7 @@ header nav a {
     padding-top: 20px;
 
 }
+
 
 .underoverskriftkjoler {
     font-family: 'mono45 headline';
@@ -370,10 +441,34 @@ header nav a {
 
 
 
+.bestil {
+    padding-top: 20px;
+
+
+}
+
+.wp-block-button__link {
+    border-width: thin;
+    border-style: ridge;
+    background-color: black;
+    color: white;
+    font-family: 'Sofia Pro Ultra Light';
+    padding: 14px 28px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+}
+
+
+.wp-block-button__link:hover {
+    background-color: #8C888C;
+}
+
 @media (min-width:850px) {
     #indholdmallory {
         display: flex;
-        padding: 130px 350px 75px;
+        padding: 50px 350px 75px;
 
     }
 
@@ -391,6 +486,8 @@ header nav a {
     }
 
 }
+
+
 
 /*******************mallory slut****************/
 /*******************ava****************/
@@ -425,7 +522,7 @@ header nav a {
 @media (min-width:850px) {
     #indholdava {
         display: flex;
-        padding: 130px 350px 75px;
+        padding: 50px 350px 75px;
 
     }
 
@@ -477,7 +574,7 @@ header nav a {
 @media (min-width:850px) {
     #indholdnaoma {
         display: flex;
-        padding: 130px 350px 75px;
+        padding: 50px 350px 75px;
 
     }
 
@@ -528,7 +625,7 @@ header nav a {
 @media (min-width:850px) {
     #indholdlynn {
         display: flex;
-        padding: 130px 350px 75px;
+        padding: 50px 350px 75px;
 
     }
 
@@ -549,8 +646,19 @@ header nav a {
 
 /*******************lynn slut****************/
 /*******************køb****************/
+
+
+.maskinebuy {
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 100px;
+
+}
+
 #indholdbuy {
     padding-top: 50px;
+
+
 
 }
 
@@ -576,6 +684,8 @@ header nav a {
     grid-template-columns: 1fr 1fr;
     font-family: 'Sofia Pro Ultra Light';
     padding-bottom: 130px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -653,125 +763,130 @@ input[type=send]:hover {
 }
 
 
-
 @media (min-width:850px) {
-    .row {
-        padding-right: 10px;
+    #mainbuy {
+        flex-wrap: nowrap;
+
     }
 
-    .col-25,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-
-
-}
-
-/*******************køb slut****************/
-
-
-
-
-/*_________________________Footer_________________________*/
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    color: #3b4141;
-    margin-top: 20px;
-    border-top: 0.5px solid #e2e2e2;
-    font-family: 'mono45 headline';
-
-}
-
-footer a {
-    padding: 5px;
-    font-size: 13px;
-}
-
-.footerv {
-    text-align: center;
-    flex-grow: 2;
-    flex-basis: 400px;
-    margin: 20px;
-    border-radius: 15px 15px 15px 15px;
-    font-family: 'mono45 headline';
-    font-weight: 300;
-
-
-
-}
-
-
-.footerh {
-    text-align: center;
-    flex-grow: 2;
-    flex-basis: 400px;
-    margin: 20px;
-    border-radius: 15px 15px 15px 15px;
-    font-size: 13px;
-    font-family: 'mono45 headline';
-    font-weight: 300;
-
-}
-
-@media (min-width:950px) {
-    .footerv {
+    /*****************køb slut********************/
+    .tilbageknap {
         text-align: left;
+        padding-left: 20px;
+        font-family: 'Sofia Pro Ultra Light';
+
+
+
     }
+
+    .tilbageknap :hover {
+        background-color: #8C888C;
+
+
+    }
+
+
+
+    button {
+        appearance: button;
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: -internal-light-dark(black, white);
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        background-color: #f5f5f5;
+        box-sizing: border-box;
+        margin: 0em;
+        font-family: 'Sofia Pro Ultra Light';
+        padding: 1px 6px;
+        border-width: thin;
+        border-style: ridge;
+        border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        border-image: initial;
+    }
+
+
+    @media (min-width:850px) {
+        .row {
+            padding-right: 10px;
+        }
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+
+
+    }
+
+    /*******************køb slut****************/
+
+
+
+
+    /*_________________________Footer_________________________*/
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        color: #3b4141;
+        margin-top: 20px;
+        border-top: 0.5px solid #e2e2e2;
+        font-family: 'mono45 headline';
+
+    }
+
+    footer a {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .footerv {
+        text-align: center;
+        flex-grow: 2;
+        flex-basis: 400px;
+        margin: 20px;
+        border-radius: 15px 15px 15px 15px;
+        font-family: 'mono45 headline';
+        font-weight: 300;
+
+
+
+    }
+
 
     .footerh {
-        text-align: end;
+        text-align: center;
+        flex-grow: 2;
+        flex-basis: 400px;
+        margin: 20px;
+        border-radius: 15px 15px 15px 15px;
+        font-size: 13px;
+        font-family: 'mono45 headline';
+        font-weight: 300;
+
     }
 
-}
+    @media (min-width:950px) {
+        .footerv {
+            text-align: left;
+        }
 
+        .footerh {
+            text-align: end;
+        }
 
-
-
-/*---------------------------footer slutter---------------------------*/
-.bubble1 {
-    padding-top: 650px;
-    padding-right: 10px;
-
-}
-
-
-.bubble {
-    position: relative;
-    width: 65px;
-    height: 40px;
-    padding: 0px;
-    background: #838377;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    float: right;
-    text-align: center;
-    font-family: 'mono45 headline';
-    font-weight: 300;
-    padding-top: 4px;
-
-}
-
-.bubble:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 5px 7px 0;
-    border-color: #838377 transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-    bottom: -5px;
-    left: 38px;
-
-}
-
-@media (max-width:950px) {
-    .bubble1 {
-        display: none;
     }
 
-}
+
+
+
+    /*---------------------------footer slutter---------------------------*/

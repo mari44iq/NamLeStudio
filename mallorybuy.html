@@ -25,10 +25,21 @@
         </nav>
     </header>
 
+    <ul class="breadcrumb">
+        <li><a href="index.html">NAM Lē</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="store.html">Pruduct</a></li>
+        <li>PRE-ORDER</li>
+    </ul>
+
     <h1 id="sidetitel"></h1>
     <main id="indholdbuy"></main>
 
+
+
+
     <main id="mainbuy">
+
 
 
         <div class="container">
@@ -92,7 +103,21 @@
 
 
 
+
+        <div class="sectionwrapper">
+            <div class="maskinebuy">
+                <img src="Artboard%201-80.jpg" alt="maskine">
+
+
+
+            </div>
+        </div>
+
     </main>
+    <div class="tilbageknap">
+        <button onclick="goBack()"> Go Back </button>
+    </div>
+
 
     <footer>
         <div class="footerv">
@@ -125,6 +150,10 @@
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
             document.querySelector("#indholdbuy").innerHTML = data.content.rendered;
+        }
+
+        function goBack() {
+            window.history.back();
         }
 
     </script>
