@@ -18,33 +18,28 @@
 
         <nav>
 
-
             <a href="store.html"> Store</a>
             <a href="studio.html"> Studio</a>
             <a href="story.html">Story</a>
 
         </nav>
-
-
-
     </header>
+    <ul class="breadcrumb">
+        <li><a href="index.html">NAM Lē</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li>SERENA DRESS</li>
+    </ul>
+
 
 
 
     <h1 id="sidetitel"></h1>
+    <main id="indholdserena"></main>
 
-
-    <main id="indhold">
-
-    </main>
-
-
-    <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-
-
-
+    <div class="tilbageknapkjoler">
+        <button onclick="goBack()"> Go Back </button>
+    </div>
     <footer>
-
         <div class="footerv">
             <a href="index.html">Contact</a>
             <a href="index.html">Privacy Policy</a>
@@ -55,8 +50,6 @@
         <div class="footerh">
             Nam Le 2020
         </div>
-
-
     </footer>
 
 
@@ -67,7 +60,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", start);
-        const url = "http://mariajorgensen.com/2_semester/eksamen_namle/wordpress/wp-json/wp/v2/pages/8";
+        const url = "http://mariajorgensen.com/2_semester/eksamen_namle/wordpress/wp-json/wp/v2/pages/322";
 
         async function start() {
             const resspons = await fetch(url);
@@ -78,7 +71,11 @@
         function vis(data) {
             console.log(data)
             document.querySelector("#sidetitel").textContent = data.title.rendered;
-            document.querySelector("#indhold").innerHTML = data.content.rendered;
+            document.querySelector("#indholdserena").innerHTML = data.content.rendered;
+        }
+
+        function goBack() {
+            window.history.back();
         }
 
     </script>
