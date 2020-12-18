@@ -383,7 +383,7 @@ ul.breadcrumb li a:hover {
     #indholdstudio {
         display: flex;
         padding: 130px 130px 75px;
-        padding-bottom: 210px;
+        padding-bottom: 260px;
 
     }
 
@@ -785,7 +785,7 @@ ul.breadcrumb li a:hover {
 }
 
 /********** alt indhold på siden*********/
-#mainbuy {
+#order {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -827,7 +827,7 @@ label {
 }
 
 /******* send knappen *********/
-input[type=send] {
+input[id=send] {
     background-color: black;
     color: white;
     padding: 12px 10px;
@@ -839,7 +839,7 @@ input[type=send] {
 
 /*******farven når musen er over********/
 
-input[type=send]:hover {
+input[id=send]:hover {
     background-color: #8C888C;
     color: white;
 }
@@ -873,13 +873,14 @@ input[type=send]:hover {
 
 
 @media (min-width:850px) {
-    #mainbuy {
+    #order {
         flex-wrap: nowrap;
 
     }
 }
 
 /*****************køb slut********************/
+/*****************tilbageknap********************/
 .tilbageknap {
     text-align: left;
     padding-left: 20px;
@@ -897,7 +898,7 @@ input[type=send]:hover {
 
 /***********knappens design*******/
 button {
-    appearance: button;
+
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: -internal-light-dark(black, white);
@@ -937,6 +938,7 @@ button {
 
 }
 
+/*******************tilbageknap slut****************/
 /*******************køb slut****************/
 
 
@@ -949,7 +951,7 @@ footer {
     color: #3b4141;
     margin-top: 20px;
     border-top: 0.5px solid #e2e2e2;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
 
 }
 
@@ -964,7 +966,7 @@ footer a {
     flex-basis: 400px;
     margin: 20px;
     border-radius: 15px 15px 15px 15px;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
     font-weight: 300;
 
 }
@@ -977,7 +979,7 @@ footer a {
     margin: 20px;
     border-radius: 15px 15px 15px 15px;
     font-size: 13px;
-    font-family: 'mono45 headline';
+    font-family: 'Sofia Pro Ultra Light';
     font-weight: 300;
 
 }
