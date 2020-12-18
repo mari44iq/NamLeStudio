@@ -40,14 +40,14 @@ body {
 }
 
 a {
-    /* default link color */
+    /* link farve */
     color: #000000;
     font-family: 'Sofia Pro Ultra Light';
     text-decoration: none;
 }
 
 header a:hover {
-    /* change to color on mouseover */
+    /* farve når musen er over */
     color: #C7C1C2;
 
 }
@@ -99,7 +99,7 @@ header nav a {
 /*********** menu slut *********/
 
 /*********************brødkrummesti *************************/
-/* Style the list */
+/* Style listen */
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -108,26 +108,26 @@ ul.breadcrumb {
 
 }
 
-/* Display list items side by side */
+/* teksten på linje */
 ul.breadcrumb li {
     display: inline;
     font-size: 15px;
 }
 
-/* Add a slash symbol (/) before/behind each list item */
+/* symbol imellem teksten */
 ul.breadcrumb li + li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
 }
 
-/* Add a color to all links inside the list */
+/* farve i linksne  */
 ul.breadcrumb li a {
     color: black;
     text-decoration: none;
 }
 
-/* Add a color on mouse-over */
+/* farve teksten får med musen over */
 ul.breadcrumb li a:hover {
     color: #c7c1c2;
     text-decoration: underline;
@@ -238,12 +238,12 @@ ul.breadcrumb li a:hover {
 
 }
 
+/**** skygge omkring billeder når musen er over *******/
 .imgstore img:hover {
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
-    /*** width: 305px;
-    height: 405px;***/
+
 }
 
 #indholdstore {
@@ -453,6 +453,7 @@ ul.breadcrumb li a:hover {
 
 }
 
+/********* knappen på pre-order på alle siderne******/
 .wp-block-button__link {
     border-width: thin;
     border-style: ridge;
@@ -466,7 +467,7 @@ ul.breadcrumb li a:hover {
 
 }
 
-
+/***** farven når musen er over på alle siderne *****/
 .wp-block-button__link:hover {
     background-color: #8C888C;
 }
@@ -758,7 +759,7 @@ ul.breadcrumb li a:hover {
 /*******************SERENA slut****************/
 /*******************køb****************/
 
-
+/******* sygmaskinen på pre-order siden*****/
 .maskinebuy {
     text-align: center;
     padding-top: 200px;
@@ -769,8 +770,6 @@ ul.breadcrumb li a:hover {
 #indholdbuy {
     padding-top: 50px;
 
-
-
 }
 
 
@@ -779,14 +778,13 @@ ul.breadcrumb li a:hover {
     margin-left: auto;
     margin-right: auto;
 
-
 }
 
 .row {
     padding-right: 20px;
 }
 
-
+/********** alt indhold på siden*********/
 #mainbuy {
     padding: 20px;
     max-width: 1000px;
@@ -809,6 +807,7 @@ h1 {
 
 }
 
+/**** pre-order listen**********/
 
 input[type=text],
 select,
@@ -827,7 +826,7 @@ label {
 
 }
 
-
+/******* send knappen *********/
 input[type=send] {
     background-color: black;
     color: white;
@@ -837,6 +836,8 @@ input[type=send] {
     cursor: pointer;
 
 }
+
+/*******farven når musen er over********/
 
 input[type=send]:hover {
     background-color: #8C888C;
@@ -850,10 +851,7 @@ input[type=send]:hover {
 
 }
 
-/**.inner_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}**/
+
 
 .col-25 {
     float: left;
@@ -865,7 +863,7 @@ input[type=send]:hover {
     width: 75%;
 }
 
-/* Clear floats after the columns */
+/* rydder op */
 .row:after {
     content: "";
     display: table;
@@ -891,14 +889,13 @@ input[type=send]:hover {
 
 }
 
+/********farve når musen er over *****/
 .tilbageknap :hover {
     background-color: #8C888C;
 
-
 }
 
-
-
+/***********knappens design*******/
 button {
     appearance: button;
     -webkit-writing-mode: horizontal-tb !important;
@@ -1001,12 +998,14 @@ footer a {
 
 /*---------------------------footer slutter---------------------------*/
 
-.ca3-scroll-down-arrow {
+/*************************** pil der viser man skal rulle ned*************/
+.rul-ned-pil {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
     background-repeat: no-repeat;
 }
 
-.ca3-scroll-down-link {
+/***********'style pilen*******/
+.rul-ned-link {
     height: 60px;
     width: 80px;
     margin: 0px 0 0 -40px;
@@ -1019,14 +1018,13 @@ footer a {
     text-decoration: none;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
 
-
-    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+    -webkit-animation: move_down 2s ease-in-out infinite;
 
 }
 
 
-/*animated scroll arrow animation*/
-@-webkit-keyframes ca3_fade_move_down {
+/*animation til pilen */
+@-webkit-keyframes move_down {
     0% {
         -webkit-transform: translate(0, -20px);
         opacity: 0;
@@ -1044,12 +1042,12 @@ footer a {
 
 
 
-
-
 @media (max-width:950px) {
-    .ca3-scroll-down-arrow {
+    .rul-ned-pil {
         display: none;
     }
 
 
 }
+
+/*************************** pil der viser man skal rulle ned slut*************/
